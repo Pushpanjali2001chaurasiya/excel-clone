@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Excel Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main-content">
+  <div class="title">Book1 - Excel</div>
+  <div class="menu-bar">
+    <div><span>File</span></div>
+    <div><span>Home</span></div>
+    <div><span>Insert</span></div>
+    <div><span>Page Layout</span></div>
+    <div><span>Formulas</span></div>
+    <div><span>Data</span></div>
+    <div><span>Review</span></div>
+    <div><span>View</span></div>
+    <div><span>Help</span></div>
+  </div>
+  <div class="icon-bar">
+    <div class="icon-bar__clipboard">
+      <div class="icon-paste">
+        <div class="icon"></div><span>Paste</span>
+      </div>
+      <div class="icon icon-cut"></div>
+      <div class="icon icon-copy"></div>
+      <div class="icon-bar__name">Clipboard</div>
+    </div>
+    <div class="icon-bar__font">
+      <select class="font-name">
+        <option selected="selected">Noto Sans</option>
+        <option style="--font:Arial">Arial</option>
+        <option style="--font:Calibri">Calibri</option>
+        <option style="--font:Comic Sans MS">Comic Sans MS</option>
+        <option style="--font:Courier New">Courier New</option>
+        <option style="--font:Impact">Impact</option>
+        <option style="--font:Georgia">Georgia</option>
+        <option style="--font:Garamond">Garamond</option>
+        <option style="--font:Lato">Lato</option>
+        <option style="--font:Open Sans">Open Sans</option>
+        <option style="--font:Palatino">Palatino</option>
+        <option style="--font:Verdana">Verdana</option>
+      </select>
+      <select class="font-size">
+        <option selected="selected">14</option>
+        <option>16</option>
+        <option>18</option>
+        <option>20</option>
+        <option>22</option>
+        <option>24</option>
+        <option>26</option>
+        <option>28</option>
+        <option>36</option>
+        <option>48</option>
+        <option>72</option>
+      </select>
+      <div class="icon icon-bold"></div>
+      <div class="icon icon-italic"></div>
+      <div class="icon icon-underline"></div>
+      <div class="icon icon-border"></div>
+      <div class="icon icon-fill"></div>
+      <div class="icon icon-color"></div>
+      <div class="icon-bar__name">Font</div>
+    </div>
+    <div class="icon-bar__alignment">
+      <div class="icon icon-alignt"></div>
+      <div class="icon icon-alignm"></div>
+      <div class="icon icon-alignb"></div>
+      <div class="icon icon-orientation"></div>
+      <div class="icon icon-alignl"></div>
+      <div class="icon icon-alignc"></div>
+      <div class="icon icon-alignr"></div>
+      <div class="icon icon-indentinc"></div>
+      <div class="icon icon-indentdec"></div>
+      <div class="wrap-text">
+        <div class="icon"></div><span>Wrap Text</span>
+      </div>
+      <div class="merge-center">
+        <div class="icon"></div><span>Merge & Center</span>
+      </div>
+      <div class="icon-bar__name">Alignment</div>
+    </div>
+    <div class="icon-bar__number">
+      <select class="number-format">
+        <option>General</option>
+        <option>Number</option>
+        <option>Currency</option>
+        <option>Accounting</option>
+        <option>Short Date</option>
+        <option>Long Date</option>
+        <option>Time</option>
+        <option>Currency</option>
+        <option>Percentage</option>
+      </select>
+      <div class="icon icon-acc"></div>
+      <div class="icon icon-percent"></div>
+      <div class="icon icon-comma"></div>
+      <div class="icon icon-decimalinc"></div>
+      <div class="icon icon-decimaldec"></div>
+      <div class="icon-bar__name">Number</div>
+    </div>
+    <div class="icon-bar__styles">
+      <div class="conditional">
+        <div class="icon"></div>
+      </div>
+      <div class="format-table">
+        <div class="icon"></div>
+      </div>
+      <div class="cell-style">
+        <div class="icon"></div>
+      </div>
+      <div class="icon-desc">Conditional Formatting</div>
+      <div class="icon-desc">Format as Table</div>
+      <div class="icon-desc">Cell Styles</div>
+      <div class="icon-bar__name">Styles</div>
+    </div>
+    <div class="icon-bar__cells">
+      <div class="cell-insert">
+        <div class="icon"></div>
+      </div>
+      <div class="cell-delete">
+        <div class="icon"></div>
+      </div>
+      <div class="cell-format">
+        <div class="icon"></div>
+      </div>
+      <div class="icon-desc">Insert</div>
+      <div class="icon-desc">Delete</div>
+      <div class="icon-desc">Format</div>
+      <div class="icon-bar__name">Cells</div>
+    </div>
+  </div>
+  <div class="cell-content">
+    <div>fx</div>
+    <div></div>
+  </div>
+  <div class="cells">
+    <div class="cells__spacer"></div>
+    <div class="cells__alphabet">A</div>
+    <div class="cells__alphabet">B</div>
+    <div class="cells__alphabet">C</div>
+    <div class="cells__alphabet">D</div>
+    <div class="cells__alphabet">E</div>
+    <div class="cells__alphabet">F</div>
+    <div class="cells__alphabet">G</div>
+    <div class="cells__alphabet">H</div>
+    <div class="cells__alphabet">I</div>
+    <div class="cells__alphabet">J</div>
+    <div class="cells__alphabet">K</div>
+    <div class="cells__number">1</div>
+    <div class="cells__number">2</div>
+    <div class="cells__number">3</div>
+    <div class="cells__number">4</div>
+    <div class="cells__number">5</div>
+    <div class="cells__number">6</div>
+    <div class="cells__number">7</div>
+    <div class="cells__number">8</div>
+    <div class="cells__number">9</div>
+    <div class="cells__number">10</div>
+    <div class="cells__number">11</div>
+    <div class="cells__number">12</div>
+    <div class="cells__number">13</div>
+    <div class="cells__number">14</div>
+    <div class="cells__number">15</div>
+    <div class="cells__number">16</div>
+    <div class="cells__number">17</div>
+    <div class="cells__number">18</div>
+    <div class="cells__number">19</div>
+    <div class="cells__number">20</div>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="cells__input"/>
+    <input class="input__explanation" value="Copyright 2023, All rights reserved Pushpanjali chaurasiya 👉🏻"/>
+    <div class="input__sm-1"><a href=" https://www.linkedin.com/in/pushpanjali-chaurasiya-160a98257" target="_blank">Linkdin</a></div>
+    <div class="input__sm-2"><a href="https://github.com/Pushpanjali2001chaurasiya" target="_blank">GitHub</a></div>
+  </div>
+</div>
+</body>
+</html>
